@@ -1,0 +1,33 @@
+<?php require("templates/partials/header.phtml") ?>
+
+<main id="mod-main">
+    <div id="div-mod1" >
+        <div>
+            <h2 id="mod-title">Modifier</h2>
+        </div>
+        <?php if(isset($erreur)): ?>
+            <div id="mod-eco"><?php echo $erreur ?></div>
+        <?php endif; ?>
+        <form action="" method="post">
+            <div class="mod-labinp">
+                <label class="lab-mod" for="login">Login: </label>
+                <input class="inp-mod" type="text" name="login" id="login" placeholder="login">
+            </div>
+            <div class="mod-labinp">
+                <label class="lab-mod" for="password">Mot de passe: </label>
+                <input class="inp-mod" type="password" name="password" id="mdp">
+            </div>
+            <div class="mod-labinp">
+                <label class="lab-mod" for="newMdp">Nouveau mot de passe: </label>
+                <input class="inp-mod" type="password" name="newMdp" id=newMdp>
+            </div>
+            <div class="mod-labinp">
+                <label class="lab-mod" for="newMdp2">Confirmez le nouveau mot de passe: </label>
+                <input class="inp-mod" type="password" name="newMdp2" id="newMdp2">
+            </div>
+                <input id="mod-but" type="submit" name="modification" value="Modifier">
+        </form>
+        </div>
+</main>
+
+<?php require('templates/partials/footer.phtml'); ?>

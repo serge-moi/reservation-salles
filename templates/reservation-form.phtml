@@ -1,0 +1,33 @@
+<?php require("templates/partials/header.phtml");
+if(isset($_SESSION["login"])): ?>
+<main id="res-main">
+    <div id="res-cont">
+        <div>
+            <h2 id="res-tit">Réser<span>vation</span></h2>
+        </div>
+        <?php if(isset($erreur)): ?>
+            <div id="res-eco"><?php echo $erreur ?></div>
+        <?php endif; ?>
+        <form action="" method="post">
+            <div class="res-labinp">
+                <label class="lab-res" for="title">Titre: </label>
+                <input class="res-inp" type="text" name="titre" id="titre">
+            </div>
+            <div class="res-labinp">    
+                <label class="lab-res"  for="description">Description: </label>
+                <input class="res-inp" type="text" name="description" id="description">
+            </div>
+            <div class="res-labinp">
+                <label class="lab-res"  for="dateDebut">Date de début: </label>
+                <input class="res-inp" type="datetime-local" name="dateDebut" id="dateDebut"/>
+            </div>
+            <div class="res-labinp">
+                <label class="lab-res"  for="dateFin">Date de fin: </label>
+                <input class="res-inp" type="datetime-local" name="dateFin" id="dateFin">
+            </div>
+                <input id="res-but" type="submit" name="reservation" id="reserver" value="Réserver">
+        </form>
+    </div>
+</main>
+<?php endif;
+require("templates/partials/footer.phtml") ?>

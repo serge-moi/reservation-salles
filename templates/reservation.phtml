@@ -1,0 +1,24 @@
+<?php require("templates/partials/header.phtml"); ?>
+
+<main id="event-main">
+    <section id="flex-sec">
+        <section id="flex-sec2">
+            <div id="top-resa">
+                <h1 id="resa-title"><?php echo $resultats["titre"]?></h1>
+            </div>
+            <div id="mid-resa">
+                <div>
+                    <h2 id="resa-log"><?php echo $resultats["login"]?></h2>
+                </div>
+                <div id="parares">
+                    <p id="resa-time"><?php echo "De " .$debut. "h à " .$fini. "h" ?></p>   
+                </div>
+            </div>
+            <div id="bot-resa">
+                <p id="resa-desc"><?php echo $resultats["description"]?></p>
+            </div>
+        </section>
+    </section>
+</main>
+
+<?php require("templates/partials/footer.phtml");

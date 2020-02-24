@@ -1,0 +1,49 @@
+<?php require("templates/partials/header.phtml");
+?>
+    <main id="plan-main">
+        <div id="machine">
+            <div id="div-size">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="clear-th"></th>
+                            <?php for($jo = 0; $jo < 7; $jo++): ?>
+                            <th><?php echo $jours[$jo] ?></th>
+                            <?php endfor; ?>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php for($h = 8; $h <= 19; $h++): ?>
+                        <tr>
+                            <td id="left-td"><?php echo $h ?>h</td>
+                            <?php for($j = 1; $j <=7; $j++): ?>
+                                <td>
+                                    <?php foreach($resultats as $resultat):
+                                        $joursem = date("w", strtotime($resultat[5]));
+                                        $heure = date("H", strtotime($resultat[5]));
+                                        $jour = date("d",strtotime($resultat[5]));
+                                        $month = date("m", strtotime($resultat[5]));
+                                        $year = date("Y", strtotime($resultat[5]));
+                                    if($joursem == 0){
+                                        $joursem = 7;
+                                    }
+                                    if($heure == $h && $joursem == $j && $joursem >=1 && $joursem <= 5 && $jour >= 24 && $jour <= 29 && $month == 2 && $year == 2020):?>
+                                        <a id="lien-resa" href="reservation.php?id=<?php echo $resultat[2] ?>"><?php echo $resultat[1]?></a>
+                                    <?php endif; ?>
+                                    <?php endforeach;?>
+                                </td>
+                            <?php endfor; ?>
+                        </tr>
+                    <?php endfor;?>
+                    </tbody>
+                </table>
+                <?php if(isset($_SESSION["evnotco"])): ?>
+                    <div id="sesnco"><?php echo $_SESSION["evnotco"] ?></div>
+                <?php endif; ?>
+                <?php if(isset($_SESSION["newresa"])): ?>
+                    <div id="sesres"><?php echo $_SESSION["newresa"] ?></div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </main>
+<?php require("templates/partials/footer.phtml");

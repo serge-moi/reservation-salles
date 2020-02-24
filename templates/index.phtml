@@ -1,0 +1,39 @@
+<?php require("templates/partials/header.phtml"); ?>
+    <main>
+        <section id="secindex">
+            <div id="tailleban">
+                <div id="banniere">
+                    <?php if(!isset($_SESSION["login"])): ?>
+                    <h1 class="ind-tit">Bienvenue sur Arcatic</h1>
+                    <h2 id="famsite">Le fameux site de reservation d'énènements d'arcade</h2>
+                    <?php else: ?>
+                    <h1 class="ind-tit"> Bienvenue <?php echo $_SESSION["login"] ?>
+                    <?php endif;?>
+                    <?php if(isset($_SESSION["cotrue"])): ?>
+                    <h2 id="cotrue"> <?php echo $_SESSION["cotrue"]; ?> </h2>
+                    <img id="mario" src="img/minimario.gif" alt="">
+                    <?php endif;?>
+                </div>
+                <div>
+                    <a href="planning.php" id="lienplan">Jeter un coup d'oeil au planning des évènements en cliquant ici</a>
+                    <img src="img/unnamed.gif" id="plan-fleche" alt="">
+                </div>
+            </div>
+            <?php if(!isset($_SESSION["login"])): ?>
+            <section id="secartindex">
+                <article class="artindex" >
+                    <img src="img/unnamed.gif" id="flechefor1" alt="">
+                    <p>Pour profiter pleinement du site, merci de vous connecter</p>
+                    <a href="connexion.php" class="indartlien">Connexion</a>
+                </article>
+                <article class="artindex">
+                    <img src="img/unnamed.gif" id="flechefor2" alt="">
+                    <p>Pas encore de compte ?</p>
+                    <a href="inscription.php" class="indartlien">Inscrivez-vous !</a>
+                </article>
+            </section>
+            <?php else:?>
+            <?php endif;?>
+        </section>
+    </main>
+<?php require("templates/partials/footer.phtml");

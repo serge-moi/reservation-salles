@@ -1,0 +1,29 @@
+<?php require("templates/partials/header.phtml") ?>
+
+<main id="sub-main">
+    <div id="sub-first-div">
+        <div id="sub-titletwo">
+            <h2 id="sub-title">Inscription</h2>
+        </div>
+        <?php if(isset($erreur)): ?>
+            <div id="sub-eco"><?php echo $erreur ?></div>
+        <?php endif; ?>
+        <form action="" id="sub-form" method="post">
+            <div class="sub-div-labinp">
+            <label class="lab-sub" for="login">Login : </label>
+            <input type="text" id="sub-login" name="login">
+            </div>
+            <div class="sub-div-labinp">
+            <label class="lab-sub" for="password">Mot de passe : </label>
+            <input type="password" id="sub-pass" name="password">
+            </div>
+            <div class="sub-div-labinp">
+            <label class="lab-sub" for="confirmPassword">Confirmer le mot de passe : </label>
+            <input type="password" id="sub-confPass" name="confirmPassword">
+            </div>
+            <input type="submit" id="sub-but" name="inscription" value="S'inscrire">
+        </form>
+    </div>
+</main>
+
+<?php require("templates/partials/footer.phtml") ?>

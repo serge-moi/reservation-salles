@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+
+
+
+
+/*/////////////////////// AFTER POLICE //////////////////////////*/
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: -webkit-fill-available;
+}
+
+header{
+    display: flex;
+    background-image: url(../img/b2ap3_large_SRArcadeBackground.png);
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Kaushan Script', cursive;
+    flex-basis: 10%;
+    align-items: center;
+    border: 5px ridge black;
+}
+
+li{
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    border-radius: 50px;
+    background-image: url(../img/1200px-Pacman.svg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+li:hover{
+    animation:spin 1s ease;
+    text-align: center;
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    50%{border-radius: 0px;
+        width: 96px;}
+    100% {
+        transform: rotate(360deg);
+        background: radial-gradient(#614c4c, 60%, #000000);
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.artliendex{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0px 4px 1px 1px;
+    border-radius: 2px;
+    opacity: 0.8;
+    font-size: 14px;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 0px 0px 4px black;
+    font-weight: bold;
+}
+
+#artlienindexdc{
+    text-align: center;
+}
+
+#forFlex{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-basis: 90%;
+    text-align: center;
+    background-image: url(../img/tetris.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px dotted #FE86BA;
+    border-bottom: 10px dotted white;
+    background-position-y: -46px;
+}
+
+footer{
+    display: flex;
+    background-image: url(../img/Pg.83.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright{
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+}
+
+#secartindex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 43px;
+}
+
+#banniere{
+    background-image: url(../img/tetris.png);
+    background-size: cover;
+    background-position-y: -36px;
+    background-repeat: no-repeat;
+    height: 520px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 10px solid black;
+}
+
+.artindex{
+    flex-basis: 33.33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    color: black;
+    z-index: 10;
+    font-size: 20px;
+    border: 8px double orangered;
+    padding: 25px 0px;
+}
+
+.artindex:hover{
+    transform: scale(0.9);
+    color: white;
+    background: repeat-y;
+    border: 8px solid black;
+}
+
+.artindex:hover > p{
+    padding: 0px 7px;
+    border-radius: 1px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.indartlien{
+    color: black;
+    font-family: 'Teko', sans-serif;
+}
+
+.indartlien:hover{
+    color: white;
+}
+
+.artindex:hover > .indartlien{
+    background-color: #232106cc;
+    padding: 0px 8px;
+    color: white;
+}
+
+.ind-tit{
+    margin: 0;
+    font-family: 'Bowlby One SC', sans-serif;
+    font-size: 35px;
+    width: 600px;
+    text-shadow: 1px 1px 3px black;
+    box-shadow: 0px 0px 11px black;
+    color: white;
+    background:
+      repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
+        rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+        rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+        rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+        rgba(255, 0, 0, 0.5) 300px),
+      repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px,
+        rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+        rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+        rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+        rgba(255, 0, 0, 0.5) 230px),
+      repeating-linear-gradient(23deg, red 50px, orange 100px,
+        yellow 150px, green 200px, blue 250px,
+        indigo 300px, violet 350px, red 370px);
+}
+
+#famsite{
+    font-family: 'Bowlby One SC', sans-serif;
+    color: lightseagreen;
+    text-shadow: 0px 0px 3px black;
+    border: 5px ridge #7d3b7d;
+    padding: 1px 7px;
+    background-color: black;
+}
+
+.artindex:hover > .indartlien:hover{
+    color: #00e2c3;
+}
+
+#lienplan{
+    border: 5px ridge black;
+    font-size: 23px;
+    background-color: #000000;
+    color: #000000;
+    padding: 4px;
+    position: relative;
+    top: -18px;
+}
+
+#lienplan:hover{
+    color: #ffffff;
+    text-shadow: 0px 1px 3px black;
+    background: repeat-y;
+}
+
+#lienplan:hover + #plan-fleche{
+    display: none;
+}
+
+#plan-fleche{
+    position: absolute;
+    width: 41px;
+    top: 557px;
+    left:1025px;
+    transform: rotate(180deg);
+    height: 70px;
+    border-radius: 2px;
+    border: 3px solid orangered;
+}
+
+.artindex:hover > #flechefor1{
+    display: none;
+}
+
+.artindex:hover > #flechefor2{
+    display: none;
+}
+
+#flechefor1{
+    position: absolute;
+    width: 41px;
+}
+
+#flechefor2{
+    position: absolute;
+    width: 41px;
+}
+
+#mario{
+    width: 211px;
+}
+
+
+
+/* //////////  CONNEXION  ////////// */
+
+
+
+#co-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/unnamed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -113px;
+    border-top: 10px solid #A40000;
+    border-bottom: 10px solid #A40000;
+}
+
+#co-first-div{
+    background-image: url(../img/807432-mario-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    padding: 34px 10px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#co-firsttitle{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#co-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    justify-content: space-around;
+}
+
+.co-div-labinp{
+    display: flex;
+    flex-direction: column;
+}
+
+#co-login{
+    padding: 3px;
+    border-radius: 6px;
+    border: 4px ridge #00EBEB;
+}
+
+#co-login:hover{
+    border: 4px ridge #E21E43; 
+}
+#co-password{
+    padding: 3px;
+    border-radius: 6px;
+    border: 4px ridge #E21E43;
+}
+
+#co-password:hover{
+    border: 4px ridge #00ebeb;
+}
+
+#co-but{
+    padding: 15px 96px;
+    background-color: black;
+    border: 5px solid #D72553;
+    font-family: 'Audiowide', cursive;
+    color: #00EBEB;
+    transform: rotate(-4deg);
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+#co-but:hover{
+    color: #FFC262;
+    background-color: #C50000;
+    border: 5px solid #FFC262;
+}
+
+.lab-co{
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 21px;
+}
+
+#co-title{
+    color: #0000B4;
+    margin: 0;
+    font-family: 'Bungee', cursive;
+    animation: clignote 1.2s infinite;
+    font-size: 22px;
+}
+
+@keyframes clignote {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#co-eco{
+    color: white;
+    font-size: 17px;
+    padding: 9px 0;
+    margin: 3px;
+    background-color: red;
+}
+
+#co-labi1{
+    transform: rotate(-2deg);
+}
+
+#co-labi2{
+    transform: rotate(3deg);
+}
+
+#ggco{
+    background-color: white;
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+
+/* ///////////  INSCRIPTION ////////// */
+
+
+
+
+#sub-main{
+    background-image: url(../img/maxresdefault.jpg);
+    background-position-y: -91px;
+    border-top: 10px solid #E0FB16;
+    border-bottom: 10px solid #E0FB16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sub-first-div{
+    background-color: white;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+#sub-title{
+    color: #47474c;
+    animation: clignote 1.2s infinite;
+    font-family: 'Bungee', cursive;
+    font-size: 22px;
+}
+
+#sub-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-div-labinp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+
+#sub-but{
+    padding: 15px 96px;
+    background-color: black;
+    border: 5px solid #79EE78;
+    font-family: 'Audiowide', cursive;
+    color: #79EE78;
+    margin-top: 12px;
+}
+
+#sub-but:hover{
+    color: #ffffff;
+    background-color: #79EE78;
+    border: 5px solid #000000;
+    text-shadow: 0px 0px 10px black;
+}
+
+.lab-sub{
+    color: black;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 21px;
+}
+
+#sub-login, #sub-pass, #sub-confPass{
+    background-color: #E0FB16;
+}
+
+#sub-login:hover, #sub-pass:hover, #sub-confPass:hover{
+    background-color: white;
+}
+
+#sub-eco{
+    color: white;
+    font-size: 15px;
+    padding: 9px 10px;
+    margin: 3px;
+    background-color: red;
+    margin-top: 9px;
+}
+
+
+
+/* ///////////  PROFIL  ////////// */
+
+
+#mod-main{
+    display: flex;
+    background-image: url(../img/2045_1.jpg);
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid #ffffff;
+    border-bottom: 10px solid #ffffff;
+}
+
+.mod-labinp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+}
+
+#div-mod1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    align-items: center;
+    padding: 20px 12px;
+    border: 20px dashed black;
+}
+
+.lab-mod{
+    color: black;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 21px;
+}
+
+#mod-title{
+    color: white;
+    animation: clignote 1.2s infinite;
+    font-size: 22px;
+    text-shadow: 1px 1px 10px black;
+    font-family: 'Bungee', cursive;
+}
+
+.inp-mod{
+    border: 5px double black;
+    padding: 3px;
+    margin-top: 2px;
+}
+
+.inp-mod:hover{
+    border: 5px ridge black;
+}
+
+#mod-but{
+    padding: 15px 96px;
+    background-color: white;
+    border: 5px solid black;
+    font-family: 'Audiowide', cursive;
+    color: black;
+    margin-top: 12px;
+}
+
+#mod-but:hover{
+    border: 5px double white;
+    color: white;
+    background-color: black;
+}
+
+#mod-eco{
+    color: white;
+    font-size: 15px;
+    padding: 9px 10px;
+    margin: 3px;
+    background-color: red;
+}
+
+
+
+/* ///////////  RESERVATION-FORM ////////// */
+
+
+#res-main{
+    background-image: url(../img/ms_outrun_poster.jpg);
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid #5D8ECA;
+    border-bottom: 10px solid #DFC475;
+}
+
+.res-labinp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.lab-res{
+    color: black;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 21px;
+    font-weight: bold;
+    text-shadow: 2px 0px 9px white;
+}
+
+#res-but{
+    padding: 34px 10px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 3px black;
+    margin-top: 10px;
+    font-family: 'Audiowide', cursive;
+    background-color: red;
+    color: white;
+    border: 5px solid white;
+    font-weight: bold;
+}
+
+#res-but:hover{
+    transform: scale(0.9);
+    border: 5px dotted white;
+    text-shadow: 0px 0px 1px black;
+}
+
+#res-cont{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.res-inp{
+    background: unset;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 4px;
+}
+
+.res-inp:hover{
+    border: 1px solid white;
+    background-color: white;
+}
+
+#res-tit{
+    color:#3B4685;
+    font-family: 'Bungee', cursive;
+    font-size: 22px;
+}
+
+span{
+    color: #ed9f18;
+}
+
+#res-eco{
+    color: white;
+    font-size: 15px;
+    padding: 9px 10px;
+    margin: 3px;
+    background-color: red;
+    border: 2px solid white;
+    box-shadow: 1px 1px 3px black;
+}
+
+
+/* ///////////  PLANNING  ////////// */
+
+
+#plan-main{
+    background-color: #1F191B;
+    background-image: none;
+    border-top: 10px solid #1F191B;
+    border-bottom: 10px solid white;
+}
+
+#machine{
+    background-image: url(../img/machine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 1px;
+    background-position-y: -25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 865px;
+    height: 825px;
+    margin: auto;
+}
+
+#div-size{
+    height: 451px;
+}
+
+table{
+    border-spacing: 0;
+}
+
+
+th{
+    border-right: 2px ridge black;
+    border-bottom: 2px ridge black;
+    border-top: 2px ridge black;
+    font-size: 16px;
+    padding: 4px;
+    background-color: #FA9BFF;
+    font-family: 'Squada One', cursive;
+}
+
+#clear-th{
+    background-color: transparent;
+    border: none;
+    border-right: 2px ridge black;
+    border-bottom: 1px solid black;
+}
+
+td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 45px;
+    padding: 3px 6.5px;
+}
+
+#left-td{
+    border-left: 1px solid black;
+    font-family: 'Squada One', cursive;
+    background-color: #5C5691;
+}
+
+#lien-resa{
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 0px 11px black;
+    font-family: 'Patrick Hand';
+    font-size: 13px;
+}
+
+#lien-resa:hover{
+    color: black;
+}
+
+
+#event-main{
+    background-image: url(../img/neoretroarcade.jpg);
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid #032E2C;
+    border-bottom: 10px solid white;
+}
+
+#sesnco{
+    padding: 4px;
+    background-color: gold;
+    border: 4px ridge black;
+    font-family: 'Acme';
+}
+
+#sesres{
+    padding: 4px;
+    background-color: #F18106;
+    border: 4px ridge black;
+    font-family: 'Acme';
+    color: white;
+}
+
+#flex-sec{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 710px;
+    color: white;
+    width: 500px;
+    background-image: url(../img/NW-Poster-Arcade-Armageddon-FACEBOOK.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Fjalla One';
+    text-transform: uppercase;
+}
+
+#mid-resa{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+    justify-content: space-around;
+}
+
+#bot-resa{
+    background-color: #8e1f26;
+    border: 6px double black;
+    color: black;
+}
+
+#flex-sec2{
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+    height: 325px;
+    background-color: #031621;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    box-shadow: 0px -1px 6px black;
+}
+
+#resa-title{
+    color: #EFE301;
+    font-size: 36px;
+}
+
+#resa-log{
+    color:#0E8D44;
+}
+
+#resa-time{
+    color:#C72126;
+}
+
+#parares{
+    border-top: 5px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

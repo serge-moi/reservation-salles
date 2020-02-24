@@ -1,0 +1,23 @@
+<?php require("templates/partials/header.phtml") ?>
+<main id="co-main">
+    <div id="co-first-div">
+        <div id="co-firsttitle">
+            <h2 id="co-title">Connexion</h2>
+        </div>
+        <?php if(isset($erreur)): ?>
+            <div id="co-eco"><?php echo $erreur; ?></div>
+        <?php endif; ?>
+        <form action="" id="co-form" method="post">
+            <div class="co-div-labinp" id="co-labi1">
+                <label class="lab-co" for="login">Login: </label>
+                <input type="text" id="co-login" name="login">
+            </div>
+            <div class="co-div-labinp" id="co-labi2">
+                <label class="lab-co" for="password">Mot de passe:</label>
+                <input type="password" id="co-password" name="password">
+            </div>
+            <input type="submit" id="co-but" name="connexion" value="Se connecter">
+        </form>
+    </div>
+</main>
+<?php require("templates/partials/footer.phtml"); ?>
