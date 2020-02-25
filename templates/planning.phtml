@@ -27,7 +27,7 @@
                                     if($joursem == 0){
                                         $joursem = 7;
                                     }
-                                    if($heure == $h && $joursem == $j && $joursem >=1 && $joursem <= 5 && $jour >= 24 && $jour <= 29 && $month == 2 && $year == 2020):?>
+                                    if($heure == $h && $joursem == $j && $joursem >=1 && $joursem <= 5):?>
                                         <a id="lien-resa" href="reservation.php?id=<?php echo $resultat[2] ?>"><?php echo $resultat[1]?></a>
                                     <?php endif; ?>
                                     <?php endforeach;?>
